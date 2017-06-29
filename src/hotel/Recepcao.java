@@ -16,7 +16,12 @@ public class Recepcao {
 	}
 	
 	public void checkOut(String nome){
-		estadias.remove(nome);
+		for (int i = 0; i < estadias.size(); i++){
+			if (estadias.get(i).getNome().equals(nome)){
+				Estadia remover = (Estadia) estadias.get(i);
+				estadias.remove(remover);
+			}
+		}
 	}
 
 	public int getNumDeHospedes() {
@@ -24,7 +29,7 @@ public class Recepcao {
 	}
 
 	public double getLucroTotal() {
-		double acumulador;
+		double acumulador = 0;
 		for (int i = 0; i < estadias.size(); i++){
 			acumulador += estadias.get(i).getValor();
 		}
