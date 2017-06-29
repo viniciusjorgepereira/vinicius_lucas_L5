@@ -92,7 +92,9 @@ public class PetShopTest {
 			
 			assertEquals(1, recepcao.getNumDeHospedes());
 			
-			assertEquals("Estadias:\nPaola Bracho (Cobra): 1 dias com o preco de R$ 10.00",
+			assertEquals("Estadias: \n"
+					+ "Paola Bracho (Cobra): 1 dias com o preço de R$ 10.0"
+					+ "\n",
 					recepcao.toString());
 		}catch(Exception e){
 			fail(); //Nao deve lancar excecao
@@ -112,9 +114,11 @@ public class PetShopTest {
 			assertEquals(0, hotel.getNumDeHospedes());
 			assertEquals(0, hotel.getLucroTotal(), 1);
 			
-			hotel.checkIn("Jerry", "Rato", 9, 3, 120.0);
-			
-			assertEquals("Estadias:\nJerry (Rato): 3 dias com o preco de R$ 120.00", hotel.toString()); 
+			hotel.checkIn("Jerry", "Rato", 9, 3, 120.00);
+
+			assertEquals("Estadias: \n"
+					+ "Jerry (Rato): 3 dias com o preço de R$ 120.0"
+					+ "\n", hotel.toString()); 
 		}catch(Exception e){
 			fail(); //Nao deve lancar excecao
 		}

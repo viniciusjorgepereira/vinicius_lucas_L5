@@ -23,5 +23,13 @@ public class Hotel {
 	public double getLucroTotal(){
 		return recepcao.getLucroTotal();
 	}
+	
+	public String toString(){
+		String saida = "";
+		for (int i = 0; i < recepcao.getNumDeHospedes(); i++) {
+			saida += recepcao.toString();
+		}
+		return saida;
+	}
 }
 

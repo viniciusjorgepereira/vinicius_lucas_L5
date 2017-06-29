@@ -37,7 +37,7 @@ public class Recepcao {
 	}
 
 	public String toString(){
-		String saida = "";
+		String saida = "Estadias: \n";
 		for (int i = 0; i < estadias.size(); i++){
 			saida += estadias.get(i).toString() + pulaLinha;
 		}
