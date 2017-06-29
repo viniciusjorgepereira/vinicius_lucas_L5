@@ -26,7 +26,7 @@ public class Recepcao {
 	public double getLucroTotal() {
 		double acumulador;
 		for (int i = 0; i < estadias.size(); i++){
-			acumulador += estadias.getValor();
+			acumulador += estadias.get(i).getValor();
 		}
 		return acumulador;
 	}
