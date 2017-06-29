@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Recepcao {
 
-	private ArrayList <Estadias> estadias;
+	private ArrayList <Estadia> estadias;
 	private final String pulaLinha = System.lineSeparator();
 	
 	public Recepcao(){

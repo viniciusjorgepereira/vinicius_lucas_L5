@@ -17,7 +17,6 @@ public class Estadia {
 		return valor;
 	}
 
-
 	public int getDias() {
 		return dias;
 	}
